@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block content%}  
+
+<section id="hero" class="d-flex align-items-center"  style="padding-top: 10%;">
+  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>Добро пожаловать в <span>Elfrido</span></h1>    
+        <h2>Доставляем вкусную еду уже более 18 лет!</h2>
+
+        <div class="btns">
+          <a href="{% url 'menu' %}" class="btn-menu animated fadeInUp scrollto">Наше меню</a>
+          <a href="{% url 'booktable' %}"class="btn-book animated fadeInUp scrollto">Закажите столик</a>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+        <!--<a href="{% static 'https://www.youtube.com/watch?v=GlrxcuEDyF8' %}" class="glightbox play-btn"></a>-->
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="{% static 'img/about.jpg' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>О нас</h3>
+            <p class="fst-italic">
+              Что делает нас отличным рестораном?            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i>Дружелюбное, индивидуальное обслуживание.</li>
+              <li><i class="bi bi-check-circle"></i> Неизменно вкусная еда.</li>
+              <li><i class="bi bi-check-circle"></i>Незабываемая атмосфера.</li>
+              <li><i class="bi bi-check-circle"></i>Эффективное обслуживание клиентов.</li>
+            </ul>
+            <p>
+              Хороший повар понимает
+              потребности ваших гостей и хорошо работает с кухонным персоналом, чтобы гарантировать
+              , что гости каждый раз получают свое блюдо таким, каким они его заказали.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>То, почему вы выбрали наш ресторан</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Индивидуальное обслуживание</h4>
+              <p>Особое место для семей, где они могут насладиться трапезой вместе.</p>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Неизменно вкусная еда</h4>
+              <p>В нашем заведении мы всегда стараемся сделать все возможное, чтобы удовлетворить потребности клиентов </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="400">
+              <span>03</span>
+              <h4>Незабываемая атмосфера</h4>
+              <p>У нас есть отличное место для любой возрастной группы со здоровой атмосферой</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    
+{% endblock%}  
+
+ 
